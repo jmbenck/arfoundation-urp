@@ -55,7 +55,7 @@ public class PlacementMGR : MonoBehaviour
 
     private void UpdatePlacementPose()
     {
-        var screenCenter = arSessionOrigin.camera.ViewportToScreenPoint(new Vector3(0.5f, 0, 5f));
+        var screenCenter = arSessionOrigin.camera.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
 
         arRaycastManager.Raycast(screenCenter, hits, trackableType);
